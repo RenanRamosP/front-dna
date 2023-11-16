@@ -61,7 +61,11 @@ export function DnaForm() {
             <FormItem>
               <FormLabel>DNA</FormLabel>
               <FormControl>
-                <Input placeholder="T|G|C|A" className="uppercase" {...field} />
+                <Input
+                  placeholder="Insira a sequência de DNA"
+                  className="uppercase"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
