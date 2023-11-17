@@ -9,7 +9,7 @@ export type DNA = {
 type DNAData = { dna: string };
 async function saveDNA(dna: string): Promise<DNA> {
   const postResponse = await axios.post<DNAData, AxiosResponse<DNA>>(
-    "http://localhost:3001/dna/",
+    `${process.env.apiUrl}/dna/`,
     {
       dna,
     }

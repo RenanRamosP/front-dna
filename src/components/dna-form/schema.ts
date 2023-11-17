@@ -3,6 +3,7 @@ import * as z from "zod";
 const FormSchema = z.object({
   dna: z
     .string()
+    .min(4, { message: "O DNA deve ter no mínimo 4 caracteres" })
     .refine((val) => val.search(/[^TGCAtgca]/) === -1, {
       message: "Somente T, G, C e A são permitidos ",
     })
