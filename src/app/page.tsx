@@ -1,4 +1,4 @@
-import { DnaForm } from "@/components/dna-form";
+import { DnaForm } from "@/components/dna-form/form";
 
 export default function Home() {
   return (
